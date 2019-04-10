@@ -29,14 +29,14 @@ menu:
   - title: 分类
     icon: list
     url: categories
-    dropdown: 3 #dropdown为下拉菜单出现的项目最大数目(只限于tags和categorys)
+    dropdown:  #dropdown为下拉菜单出现的项目最大数目(只限于tags和categorys)
     # 如果不想显示下拉菜单, 则不要填写, 即dropdown:
     # 具体效果可以看https://myau.moe
   # tags
   - title: 标签
     icon: tags
     url: tags
-    dropdown: 3
+    dropdown: 
   # about, 这个实际上是自定义page, 后面的自定义page参照about样式
   - title: 关于我
     icon: user
@@ -54,7 +54,7 @@ default_preview:
   - preview4.jpg
 
 
-favicon: imgs/favicon.ico 
+favicon: /imgs/favicon.ico 
 
 # 侧边栏
 sidebar:
@@ -92,7 +92,7 @@ use_issue: false
 # monokai_sublime
 # atom-one-dark
 # darcula
-highlight_theme: atom-one-dark
+highlight_theme: darcula
 
 # 背景图功能
 # 必填项
@@ -111,16 +111,16 @@ slide_background:
 
 
 # 是否开启欧尼酱功能
-open_oni: false
+open_oni: true
 # 欧尼酱功能设置, 前提为open_oni: true
 oni_setting:
   # 限三项, 可以自己配置链接(一般是上面的menu或者自己的page)
   - title: 归档
     url: archives
+  - title: 标签
+    url: tags
   - title: 关于
     url: about
-  - title: 留言板
-    url: message
 # 欧尼酱选项图片(可以自己替换, 最好是100 * 100像素的图片)
 # 图片为默认的 source/imgs/oni/oni(1~6).jpg
 # 如果自己替换了不同后缀的图片, 需要在 source/css/_common.css中修改(直接ctrl + F搜oni)
