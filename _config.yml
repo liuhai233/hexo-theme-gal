@@ -111,7 +111,7 @@ slide_background:
 
 
 # 是否开启欧尼酱功能
-open_oni: true
+open_oni: false
 # 欧尼酱功能设置, 前提为open_oni: true
 oni_setting:
   # 限三项, 可以自己配置链接(一般是上面的menu或者自己的page)
